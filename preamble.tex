@@ -1,0 +1,53 @@
+% preamble.tex
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% Maths
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+
+% Graphics and links
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+% Nice boxes for 'chill vibes' explanations & problems
+\usepackage{tcolorbox}
+\tcbset{colback=white, colframe=black!50, boxrule=0.6pt, arc=3pt}
+
+\newtcolorbox{friendly}[1][]{
+  title=\textbf{Friendly note}, fonttitle=\bfseries, #1
+}
+\newtcolorbox{examplebox}[1][]{
+  title=\textbf{Example}, fonttitle=\bfseries, #1
+}
+\newtcolorbox{problembox}[1][]{
+  title=\textbf{Practice Problem}, fonttitle=\bfseries, #1
+}
+
+\usepackage{imakeidx}
+\makeindex[options=-s mystyle.ist] % more control
+
+% Code listing (for snippets)
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,breaklines=true}
+
+% Section styling
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter.}{1em}{}
+\titleformat{\section}[hang]{\large\bfseries}{\thesection.}{0.5em}{}
+
+% Custom commands
+\newcommand{\idea}[1]{\begin{friendly}#1\end{friendly}}
+\newcommand{\example}[1]{\begin{examplebox}#1\end{examplebox}}
+\newcommand{\problem}[1]{\begin{problembox}#1\end{problembox}}
+
+% Bibliography settings (if using bibtex)
+% \usepackage{natbib}  % optional
+
+% End preamble

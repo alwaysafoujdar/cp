@@ -1,0 +1,15 @@
+% chapters/99-appendix.tex
+\chapter{Appendix}
+
+\section*{Passing by reference:}
+\[
+\texttt{for (auto \&it : v) cin >> it;}
+\]
+
+The ampersand \& is super important here. It means you're using a reference to the actual element in the vector \texttt{v}.  
+This allows you to directly change its value.  
+
+If you left it out (\texttt{for (auto it : v)}), it would just be a copy, and changing it wouldn't change the original vector at all.
+
+\section*{Further resources}
+CSES Problem Set: \url{https://cses.fi/problemset/}

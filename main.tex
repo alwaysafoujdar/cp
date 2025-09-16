@@ -1,0 +1,55 @@
+\documentclass[11pt,openany]{book}
+
+% Preamble (packages, macros)
+\input{preamble.tex}
+
+% Meta
+\title{Notes from the CP Trenches}
+\author{
+  Aman K. Foujdar \\
+  Ashoka University \\
+  \href{https://alwaysafoujdar.github.io/}{Website} | \href{https://www.linkedin.com/in/amanfoujdar/}{LinkedIn}
+}
+\date{17 Sep, 2025}
+
+\begin{document}
+
+% Title page
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+% Dedication (one dedicated page)
+\begin{center}
+  \vspace*{4cm}
+  \textit{Dedicated to Suman, my mother, to whom I owe everything.}
+\end{center}
+\clearpage
+
+
+% Preface / How to use this book
+\frontmatter
+\include{chapters/00-preface}
+
+
+% Include chapters (each is separate file in chapters/)
+\include{chapters/01-prefix-sums}
+% ... add more chapters here, e.g. \include{chapters/03-two-pointers}
+
+% Appendix
+\appendix
+\include{chapters/99-appendix}
+
+% Bibliography (if needed)
+% \backmatter
+% \bibliographystyle{plain}
+% \bibliography{bib}
+
+% \backmatter
+% \cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Index}  % adds Index to TOC
+% \printindex
+
+
+\end{document}

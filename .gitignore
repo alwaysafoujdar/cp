@@ -1,0 +1,12 @@
+# LaTeX auxiliary and intermediate files
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.idx
+*.ilg
+*.ind
+*.fls
+*.toc
+*.fdb_latexmk
